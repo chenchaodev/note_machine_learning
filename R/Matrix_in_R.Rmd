@@ -1,0 +1,187 @@
+---
+title: "Matrix in R"
+author: "CC"
+date: "2016年2月5日"
+output: html_document
+---
+## 基本运算
+
+```{r}
+#创建向量
+x = c(1,2,3,4)
+x
+```
+
+```{r}
+# 创建矩阵
+args(matrix)
+
+#data 项为必要的矩阵元素，
+#nrow 为行数，ncol 为列数，
+#注意nrow 与ncol 的乘积应为矩阵元素个数，
+#byrow 项控制排列元素时是否按行进行，
+#dimnames 给定行和列的名称。
+matrix(1:12, nrow=3, ncol=4)
+
+matrix(1:12, nrow = 3, ncol = 4, byrow = T)
+
+rowname <- c("r1", "r2", "r3")
+colname <- c("c1", "c2", "c3", "c4")
+
+matrix(1:12,nrow=3,ncol=4,dimnames=list(rowname,colname))
+
+```
+
+```{r}
+args(array)
+
+array(c(1:6), c(2,3))
+```
+
+矩阵的维数
+
+```{r}
+A = matrix(1:12, 3,4)
+nrow(A)
+ncol(A)
+```
+
+矩阵的行和、列和、行平均、列平均
+```{r}
+rowSums(A)
+rowMeans(A)
+colSums(A)
+colMeans(A)
+```
+
+row() 与 col()用于去矩阵的行货列下标
+
+```{r}
+x <- matrix(1:12, 3, 4)
+row(x)
+col(x)
+```
+
+取上三角和下三角矩阵
+```{r}
+x[row(x)<col(x)] = 0
+x
+```
+
+```{r}
+x = matrix(1:12, 3, 4)
+x[row(x)>col(x)] = 0
+x
+```
+
+取矩阵的上下三角部分
+
+```{r}
+args(lower.tri)
+A
+lower.tri(A)
+lower.tri(A, diag = T)
+upper.tri(A)
+A[lower.tri(A)] = 0
+A
+```
+
+矩阵对角元素
+```{r}
+A = matrix(1:16, nrow = 4, ncol = 4)
+A
+diag(A)
+diag(diag(A))
+diag(3)
+
+
+```
+
+矩阵转置
+
+```{r}
+A
+t(A)
+x
+t(x)
+```
+
+矩阵相加减,数与矩阵相乘
+```{r}
+A=B=matrix(1:12, nrow = 3, ncol = 4)
+A+B
+A-B
+A * 3
+
+```
+
+向量矩阵内积
+```{r}
+x = 1:5
+y = 2* 1:5
+
+#内积
+x %*% y
+
+crossprod(x, y)
+t(x) %*% y
+crossprod(x)
+tcrossprod(x,y)
+x %*% t(y)
+
+tcrossprod(x)
+
+```
+
+叉乘
+```{r}
+x <- 1:3
+y <- 1:2
+
+x %o% y
+outer(x,y)
+```
+
+行列式
+
+```{r}
+x = matrix(rnorm(16), 4, 4)
+
+det(x)
+```
+
+矩阵的秩
+
+```{r}
+qr(x)
+```
+
+解线性方程组和求矩阵的逆
+
+```{r}
+A = t(array(c(1:8, 10), dim = c(3,3)))
+A
+
+b = c(1,1,1)
+x = solve(A,b)
+x
+
+#求逆矩阵
+solve(A)
+#矩阵为上三角或下三角矩阵时
+args(backsolve)
+args(forwardsolve)
+```
+
+特征值和特征向量
+矩阵A 的谱分解为A=UΛU',其中Λ 是由A 的特征值组成的对角矩阵，U 的列为A 的
+特征值对应的特征向量，在R中可以用函数eigen()函数得到U和Λ，
+
+```{r}
+args(eigen)
+A = diag(4) +1
+A
+eigen(A)
+
+
+```

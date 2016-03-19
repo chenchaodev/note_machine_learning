@@ -1,0 +1,201 @@
+---
+title: "RinActionChap02 Creating a dataset"
+author: "Tony"
+date: "2016年1月1日"
+output: html_document
+---
+
+##Basic 
+###Data structure
+####Vectors
+```{r}
+a <- c(1, 2, 5, 3, 6)
+b <- c("one", "two")
+c <- c(TRUE, FALSE)
+a[3]
+a[1:3]
+```
+
+####Matrices
+```{r}
+y <- matrix(1:20, nrow = 5, ncol = 4)
+y
+cells <- c(1, 26, 24, 68)
+rnames <- c("r1", "r2")
+cnames <- c("c1", "c2")
+mymatrix <- matrix(cells, nrow = 2, ncol = 2, byrow = TRUE, dimnames = list(rnames, cnames))
+mymatrix
+
+mymatrix <- matrix(cells, nrow = 2, ncol = 2, byrow = FALSE, dimnames = list(rnames, cnames))
+mymatrix
+
+x <- matrix(1:10, nrow = 2)
+x
+x[2,]
+x[,2]
+x[1,3]
+x[1, c(4, 5)]
+
+
+```
+
+####Arrays
+Arrays are similar to matrices but can have more than two dimensions
+
+```{r}
+dim1 <- c("A1", "A2")
+dim2 <- c("B1", "B2", "B3")
+dim3 <- c("C1", "C2", "C3", "C4")
+z <- array(1:24, c(2, 3, 4), dimnames=list(dim1, dim2, dim3))
+z
+```
+
+####Data frames
+different columns can contain different modes of data
+
+```{r}
+patientID <- c(1, 2, 5, 4)
+age <- c(25, 34, 28, 52)
+diabetes <- c("Type1", "Type2", "Type1", "Type1")
+status <- c("Poor", "Improved", "Excellent", "Poor")
+patientdata <- data.frame(patientID, age, diabetes, status)
+patientdata
+patientdata[1 : 2]
+patientdata[c("diabetes", "status")]
+patientdata$age
+table(patientdata$diabetes, patientdata$status)
+patientdata <- data.frame(patientID, age, diabetes, status, row.names=patientID)
+patientdata
+```
+
+```{r}
+attach(mtcars)
+  summary(mtcars$mpg)
+  plot(mtcars$mpg, mtcars$disp)
+detach(mtcars)
+```
+
+with(): assignment will only exist within function brackets unless use `<<-` 
+
+```{r}
+with(mtcars, {
+  stats <- summary(mpg, disp, wt)
+  stats2 <<- summary(mpg, disp, wt)
+})
+stats2
+```
+
+####Factors
+```{r}
+patientID <-c(1, 2, 3, 4)
+age <- c(25, 34, 28, 52)
+diabetes <- c("Type1", "Type2", "Type1", "Type1")
+status <- c("Poor", "Improved", "Excellent", "Poor")
+diabetes <- factor(diabetes)
+status <- factor(status, order=TRUE)
+patientdata <- data.frame(patientID, age, diabetes, status) 
+str(patientdata)
+summary(patientdata)
+```
+
+####Lists
+A list is an ordered collection of objects
+
+```{r}
+g <- "hello"
+h <- c(25,12)
+j <- matrix(1:10, nrow = 2)
+k <- c("one", "two")
+mylist <- list(title=g, ages = h,j,k)
+mylist
+```
+
+###Data input
+####Entering data from the keyboard
+```{r}
+mydata <- data.frame(age=numeric(0),
+                     gender=character(0), weight=numeric(0))
+mydata <- edit(mydata)
+
+```
+
+####Import data from a delimited text file
+```
+mydataframe <- read.table(file, header = logical_value,
+                          seq="delimiter", row.names = "name");
+grades <- read.table("studentgrades.csv", header=TRUE, sep=",",   row.names="STUDENTID")
+```
+
+####Import data from Excel
+
+```
+install.packages("RODBC")
+library(RODBC)
+channel <- odbcConnectExcel("myfile.xls")
+mydataframe <- sqlFetch(channel, "mysheet")
+odbcClose(channel)
+```
+
+#### XML
+XML package 
+http://www.omegahat.org/RSXML/
+
+####Webscraping
+readLines()
+grep()
+gsub()
+RCurl and XML package
+
+####SPSS
+Hmisc package
+spss.get()
+
+####SAS
+read.ssd() in foreign package
+sas.get() in Hmisc
+
+####Stata
+read.dta() in foreign package
+
+####netCDF
+```
+library(ncdf) 
+nc <- nc_open("mynetCDFfile") 
+myarray <- get.var.ncdf(nc, myvar)
+```
+
+####HDF5
+hdf5 package
+
+####DBMSs
+RODBC package
+
+####Stat/Transfer
+It can transfer data between 34 data formats.
+
+###Annotating datasets
+```
+names(patientdata)[2] <- "Age at hospitalization (in years)"
+patientdata$gender <- factor(patientdata$gender,levels = c(1,2),labels = c("male", "female"))
+```
+
+###Functions 
+
+```
+length()
+dim()
+str()
+class()
+mode()
+names()
+c()
+cbind()
+rbind()
+object
+head()
+tail()
+ls()
+rm()
+newobject <- edit(object)
+fix(object)   Edit in place
+```

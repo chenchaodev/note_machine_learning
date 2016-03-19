@@ -1,0 +1,180 @@
+---
+title: "RinActionChap07 Basic statics"
+author: "Tony"
+date: "2016年1月2日"
+output: html_document
+---
+### Descriptive statistics
+
+####Amenagerie of methods
+```{r}
+vars <- c("mpg", "hp", "wt")
+head(mtcars[vars])
+summary(mtcars[vars])
+
+mystats <- function(x, na.omit=FALSE) {
+  if(na.omit)
+    x <- x[!is.na(x)]
+  m <- mean(x)
+  n <- length(x)
+  s <- sd(x)
+  skew <- sum((x-m)^3/s^3)/n
+  kurt <- sum((x-m)^4/s^4)/n - 3
+  return(c(n=n, mean=m, stdev=s, skew=skew, kurtosis=kurt))
+}
+
+sapply(mtcars[vars], mystats)
+```
+
+hmisc pastecs psych
+
+```{r}
+library(Hmisc)
+describe(mtcars[vars])
+library(pastecs)
+stat.desc(mtcars[vars])
+library(psych)
+describe(mtcars[vars])
+Hmisc::describe(mtcars[vars])
+```
+
+####Descriptive statistics by group
+
+```{r}
+# aggregate(mtcars[vars], by=list(am=mtcars$am), mean)
+# dstats <- function(x)(c(mean=mean(x), sd=sd(x)))
+# by(mtcars[vars], mtcars$am, dstats)
+# library(doBy)
+# summaryBy(mpg+hp+wt~am, data=mtcars, FUN=mystats)
+# library(psych)
+# describe.by(mtcars[vars], mtcars$am)
+# library{reshape}
+# dstats <- function(x)(c(n=length(x), mean=mean(x), sd=sd(x)))
+# dfm <- melt(mtcars, measure.vars=c("mpg", "hp", "wt"),
+#             id.vars=c("am", "cyl"))
+# cast(dfm, am + cyl + variable ~ ., dstats)
+```
+
+###Frequency and contingency tables
+```{r}
+library(vcd)
+head(Arthritis)
+
+```
+
+Function | Description
+-------- | -----------
+table(var1, var2, …, varN)  | Creates an N-way contingency table from N categorical variables (factors)
+xtabs(formula, data) | Creates an N-way contingency table based on a formula and a matrix or data frame
+prop.table(table, margins) | Expresses table entries as fractions of the marginal table defined by the margins
+margin.table(table, margins) | Computes the sum of table entries for a marginal table defined by the margins
+addmargins(table, margins) | Puts summary margins (sums by default) on a table
+ftable(table) | Creates a compact "flat" contingency table
+
+```{r}
+mytable <- with(Arthritis, table(Improved))
+mytable
+prop.table(mytable)
+prop.table(mytable)*100
+
+mytable <- xtabs(~ Treatment+Improved, data=Arthritis) 
+mytable
+margin.table(mytable, 1)
+prop.table(mytable, 1)
+margin.table(mytable, 2)
+prop.table(mytable, 2)
+addmargins(mytable)
+library(gmodels)
+CrossTable(Arthritis$Treatment, Arthritis$Improved)
+```
+####Tests of independence
+
+```{r}
+library(vcd)
+mytable <- xtabs(~Treatment+Improved, data=Arthritis)
+chisq.test(mytable)
+fisher.test(mytable)
+mytable <- xtabs(~Improved+Sex, data=Arthritis)
+chisq.test(mytable)
+mytable <- xtabs(~Treatment+Improved+Sex, data=Arthritis)
+mantelhaen.test(mytable)
+           
+```
+
+####Measures of association
+
+```{r}
+library(vcd)
+mytable <- xtabs(~Treatment+Improved, data=Arthritis)
+assocstats(mytable)
+```
+
+####Converting tables to flat files
+
+```{r}
+table2flat <- function(mytable) {
+  df <- as.data.frame(mytable)
+  rows  <- dim(df)
+  cols  <- dim(df)[2]
+  x <- NULL
+  for (i in 1:rows){
+    for (j in 1:df$Freq[i]){
+      row <- df[i,c(1:(cols-1))]
+      x <- rbind(x,row)
+      }
+    }
+  row.names(x)<-c(1:dim(x)[1])
+  return(x)
+}
+
+treatment <- rep(c("Placebo", "Treated"), times=3)
+improved <- rep(c("None", "Some", "Marked"), each=2)
+Freq <- c(29,13,7,17,7,21)
+mytable <- as.data.frame(cbind(treatment, improved, Freq))
+mydata <- table2flat(mytable)
+head(mydata)
+```
+
+###Correlations 
+####Types of correlations
+- pearson
+- spearman
+- kendall
+- `cor(x, user=, method=)`
+- partial correlations `pcor(u, S)`
+
+```{r}
+states <- state.x77[,1:6]
+cov(states)
+cor(states)
+cor(states, method = "spearman")
+x <- states[,c("Population", "Income", "Illiteracy", "HS Grad")]
+y <- states[,c("Life Exp", "Murder")]
+cor(x, y)
+```
+
+####Testing correlations for significance
+
+```{r}
+cor.test(states[,3], states[,5])
+library(psych) 
+corr.test(states, use="complete")
+
+```
+####Visualizing correlations
+scatter plots
+
+###t-test
+`t.test(y ~ x, data)`
+
+```{r}
+library(MASS)
+t.test(Prob ~ So, data=UScrime)
+sapply(UScrime[c("U1","U2")], function(x)(c(mean=mean(x),sd=sd(x))))
+with(UScrime, t.test(U1, U2, paired=TRUE))
+```
+
+###Nonprarametric tests of group differences
+- `wilcox.test(y ~ x, data)`
+- `kruskal.test(y ~ A, data)`
+- `friedman.test(y ~ A | B, data)`
