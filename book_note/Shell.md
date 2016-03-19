@@ -1,4 +1,4 @@
-##µÚÒ»¸öshell script
+##ç¬¬ä¸€ä¸ªshell script
     clear
     echo "Hello $USER"
     echo "Today is \c " : date
@@ -7,9 +7,9 @@
     cal
     exit 0
 
-exit status: Ö´ĞĞ½Å±¾ÃüÁîºóµÄÖ´ĞĞ½á¹û·ÅÔÚ±äÁ¿ $?ÖĞ£¬Èç¹ûÎª 0 £¬Ö´ĞĞ½á¹û³É¹¦£¬Èç¹ûÎª1£¬Ö´ĞĞ½á¹ûÊ§°Ü
+exit status: æ‰§è¡Œè„šæœ¬å‘½ä»¤åçš„æ‰§è¡Œç»“æœæ”¾åœ¨å˜é‡ $?ä¸­ï¼Œå¦‚æœä¸º 0 ï¼Œæ‰§è¡Œç»“æœæˆåŠŸï¼Œå¦‚æœä¸º1ï¼Œæ‰§è¡Œç»“æœå¤±è´¥ 
 
-## ÏµÍ³±äÁ¿
+## ç³»ç»Ÿå˜é‡
     * BASH
     * BASH_VERSION
     * HOME
@@ -20,18 +20,18 @@ exit status: Ö´ĞĞ½Å±¾ÃüÁîºóµÄÖ´ĞĞ½á¹û·ÅÔÚ±äÁ¿ $?ÖĞ£¬Èç¹ûÎª 0 £¬Ö´ĞĞ½á¹û³É¹¦£¬Èç¹
     * PWD
     * SHELL
     * USERNAME
-### ÓÃ»§¶¨Òå±äÁ¿ UDV
+### ç”¨æˆ·å®šä¹‰å˜é‡ UDV
     variable name=value
 
-¶¨Òå¹æÔò
-    * ×ÖÄ¸¡¢Êı×Ö»ò_¿ªÍ·£¬
-    * µÈºÅÁ½±ß²»Òª·Å¿Õ¸ñ
-    * ´óĞ¡Ğ´Ãô¸Ğ
-    * ¿ÉÒÔ¶¨Òå¿Õ±äÁ¿
+å®šä¹‰è§„åˆ™
+    * å­—æ¯ã€æ•°å­—æˆ–_å¼€å¤´ï¼Œ
+    * ç­‰å·ä¸¤è¾¹ä¸è¦æ”¾ç©ºæ ¼
+    * å¤§å°å†™æ•æ„Ÿ
+    * å¯ä»¥å®šä¹‰ç©ºå˜é‡
             vech= 
             vech=""
             echo $vech
-    * ²»ÒªÊ¹ÓÃ ? * µÈ
+    * ä¸è¦ä½¿ç”¨ ? * ç­‰
 ### echo
     echo [options] [string, variables...]
     Displays text or variables value on screen.
@@ -49,11 +49,11 @@ exit status: Ö´ĞĞ½Å±¾ÃüÁîºóµÄÖ´ĞĞ½á¹û·ÅÔÚ±äÁ¿ $?ÖĞ£¬Èç¹ûÎª 0 £¬Ö´ĞĞ½á¹û³É¹¦£¬Èç¹
 ### Shell Arithmetic
     
     expr 1 + 3
-    echo expr 10 \* 3 \\ \Îª×ªÒå·û
+    echo expr 10 \* 3 \\ \ä¸ºè½¬ä¹‰ç¬¦
 ### quotes
-    * " Êä³ö×ÖÃæÒâÒå £¨³ıÁË \ *)
+    * " è¾“å‡ºå­—é¢æ„ä¹‰ ï¼ˆé™¤äº† \ *)
     * ' remains unchanged
-    * ` Ö´ĞĞÃüÁî
+    * ` æ‰§è¡Œå‘½ä»¤
 
 ### read
     echo "Your first name please:"
@@ -62,20 +62,20 @@ exit status: Ö´ĞĞ½Å±¾ÃüÁîºóµÄÖ´ĞĞ½á¹û·ÅÔÚ±äÁ¿ $?ÖĞ£¬Èç¹ûÎª 0 £¬Ö´ĞĞ½á¹û³É¹¦£¬Èç¹
 ### Wild cards
     * \*
     * ?
-    * [abc]\* \\ÒÔa¡¢b¡¢c¿ªÍ·µÄËùÓĞ
-###¶àÃüÁî
-ÒÔ ; ·Ö¸î
+    * [abc]\* \\ä»¥aã€bã€cå¼€å¤´çš„æ‰€æœ‰
+###å¤šå‘½ä»¤
+ä»¥ ; åˆ†å‰²
 
-###shell ²ÎÊı
+###shell å‚æ•°
 * \$0 shell name
 * \$1 first argument
 * \$2 second argument
 * \$\* or \$@ all argument
 
 ### redirection  of standard output/input 
-* > Êä³öµ½ÎÄ¼ş£¬Ô­ÓĞÄÚÈİ½«±»¸²¸Ç
-* >> ×·¼Óµ½ÎÄ¼ş
-* < ´ÓÎÄ¼şÊäÈë
+* > è¾“å‡ºåˆ°æ–‡ä»¶ï¼ŒåŸæœ‰å†…å®¹å°†è¢«è¦†ç›–
+* >> è¿½åŠ åˆ°æ–‡ä»¶
+* < ä»æ–‡ä»¶è¾“å…¥
 
     sort < sname > sorted_names
     tr "[a-z]" "[A-Z]" < sname > cap_names
@@ -90,14 +90,14 @@ exit status: Ö´ĞĞ½Å±¾ÃüÁîºóµÄÖ´ĞĞ½á¹û·ÅÔÚ±äÁ¿ $?ÖĞ£¬Èç¹ûÎª 0 £¬Ö´ĞĞ½á¹û³É¹¦£¬Èç¹
     tail +20 < hotel.txt | head -n30 >hlist
     sort < sname | uniq > u_sname
 
-### ½ø³Ì
-    #ºóÌ¨ÔËĞĞ³ÌĞò
+### è¿›ç¨‹
+    #åå°è¿è¡Œç¨‹åº
     ls / -R | wc -l &
     ps
     kill {PID}
     killall {Process-name}
-    kill 0 //É¾³ı³ıshellÍâËùÓĞ½ø³Ì
-    linux-command & //ºóÌ¨ÔËĞĞ³ÌĞò
+    kill 0 //åˆ é™¤é™¤shellå¤–æ‰€æœ‰è¿›ç¨‹
+    linux-command & //åå°è¿è¡Œç¨‹åº
     ps aux
     ps ax | grep process-U-want-to-see
     top
@@ -296,20 +296,20 @@ exit status: Ö´ĞĞ½Å±¾ÃüÁîºóµÄÖ´ĞĞ½á¹û·ÅÔÚ±äÁ¿ $?ÖĞ£¬Èç¹ûÎª 0 £¬Ö´ĞĞ½á¹û³É¹¦£¬Èç¹
 
 ## Advanced Shell Scripting Commands
 ### /dev/num
-ÓÃÓÚ°Ñ²»ĞèÒªµÄÊä³ö¶¨Ïò
+ç”¨äºæŠŠä¸éœ€è¦çš„è¾“å‡ºå®šå‘
     ls > /dev/null
-###¾Ö²¿±äÁ¿ºÍÈ«¾Ö±äÁ¿
-    export vech ½«¾Ö²¿±äÁ¿ export
+###å±€éƒ¨å˜é‡å’Œå…¨å±€å˜é‡
+    export vech å°†å±€éƒ¨å˜é‡ export
 ###condition execution
-    command1 && command2 // command1·µ»Ø0 Ö´ĞĞÃüÁî2
-    command1 || command2 // command1·µ»Ø·Ç0 Ö´ĞĞÃüÁî2
+    command1 && command2 // command1è¿”å›0 æ‰§è¡Œå‘½ä»¤2
+    command1 || command2 // command1è¿”å›é0 æ‰§è¡Œå‘½ä»¤2
     $ rm myf && echo "File is removed successfully" || echo "File is not removed"
 
 ### I/O redirection and file descriptors
     cat > myf
     cal > myCal
     sort < nos
-Ã¿¸ö³ÌĞòºÍ3¸öÎÄ¼ş°ó¶¨  stdin \ 0, stdout \1 , stderr \2
+æ¯ä¸ªç¨‹åºå’Œ3ä¸ªæ–‡ä»¶ç»‘å®š  stdin \ 0, stdout \1 , stderr \2
 
 ### Functions
     $ SayHello()
@@ -426,7 +426,7 @@ all together
     
 * 0 shell exit
 * 1 hangup
-* 2 interrupt (CTRL£«C)
+* 2 interrupt (CTRLï¼‹C)
 * 3 quit
 * 9 kill (cannot be caught)
 
@@ -437,10 +437,10 @@ all together
     $1 = foo $2 = bar
 
 where to use shift
-* ÓÃÀ´¶ÔÃüÁîĞĞ²ÎÊı´¦Àí£¬È¥µô¶àÓà²ÎÊı
+* ç”¨æ¥å¯¹å‘½ä»¤è¡Œå‚æ•°å¤„ç†ï¼Œå»æ‰å¤šä½™å‚æ•°
 
 ### getopts command
-¼ì²é²ÎÊıÊÇ·ñºÏ·¨
+æ£€æŸ¥å‚æ•°æ˜¯å¦åˆæ³•
     getopts {optstring| {variablel}
  
     $ vi ani
