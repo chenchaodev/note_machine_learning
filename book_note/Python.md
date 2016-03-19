@@ -1,21 +1,21 @@
-##»ù´¡
+##åŸºç¡€ 
 
-###ÊäÈëºÍÊä³ö
+###è¾“å…¥å’Œè¾“å‡º
     print("hello, world")
     print("hello,", "world")
     print('300 + 200',  300 + 200)
     name = input()
 
-###³£¼ûÊı¾İÀàĞÍ
-    - ÕûÊı
-        1£¬ -8080£¬ 0£¬ 0xff00 £¨Ê®Áù½øÖÆ£©
-    - ¸¡µãÊı
-        1.23£¬3.14,1.23e10£¬1.2e-5
-    - ×Ö·û´®
+###å¸¸è§æ•°æ®ç±»å‹
+    - æ•´æ•°
+        1ï¼Œ -8080ï¼Œ 0ï¼Œ 0xff00 ï¼ˆåå…­è¿›åˆ¶ï¼‰
+    - æµ®ç‚¹æ•°
+        1.23ï¼Œ3.14,1.23e10ï¼Œ1.2e-5
+    - å­—ç¬¦ä¸²
         print('I\'m learning \nPython')
-        print(r'\\\t\\') £¨r' ' ²»×ªÒå£©
+        print(r'\\\t\\') ï¼ˆr' ' ä¸è½¬ä¹‰ï¼‰
         print('''line1
-        ...line2''')     £¨'''...'''±íÊ¾¶àĞĞÄÚÈİ£©
+        ...line2''')     ï¼ˆ'''...'''è¡¨ç¤ºå¤šè¡Œå†…å®¹ï¼‰
         print('''line1
         line2
         line3''')
@@ -24,22 +24,22 @@
         False
         and or not
     - None
-    - ±äÁ¿
+    - å˜é‡
         a = 2
-    - ³£Á¿
-        PI = 3.1415926 £¨È«²¿´óĞ´£©
+    - å¸¸é‡
+        PI = 3.1415926 ï¼ˆå…¨éƒ¨å¤§å†™ï¼‰
         10/3 = 3.333
         10//3 = 3
 
-###×Ö·û´®ºÍ±àÂë
-    - Python 3£¬Unicode¸ñÊ½
-    - ×Ö·û×ª»»
+###å­—ç¬¦ä¸²å’Œç¼–ç 
+    - Python 3ï¼ŒUnicodeæ ¼å¼
+    - å­—ç¬¦è½¬æ¢
         ord()
         chr()
-    - Õ¼Î»·û
+    - å ä½ç¬¦
         %d %f %s %x
 
-### list ºÍ tuple
+### list å’Œ tuple
 - list
         classmates = ['Mike', 'Bob', 'Tracy']
         len(classmates)
@@ -51,12 +51,12 @@
         classmates[1] = 'Sarah'
         classmates.insert(i, value)
 - tuple
-    ²»ÄÜĞŞ¸Ä£¬Ã»ÓĞ append() inser() pop() ·½·¨
+    ä¸èƒ½ä¿®æ”¹ï¼Œæ²¡æœ‰ append() inser() pop() æ–¹æ³•
         classmatesTuple = ('Mike', 'Bob', 'Tracy')
         t = ()
-        t = (1, ) '''ĞèÒª×¢Òâ£¬ÒòÎª£¨£©ÓĞÁ½ÖØÒâÒå£¬Èç¹ûÎŞ£¬»Ú²úÉúÆçÒå£©
+        t = (1, ) '''éœ€è¦æ³¨æ„ï¼Œå› ä¸ºï¼ˆï¼‰æœ‰ä¸¤é‡æ„ä¹‰ï¼Œå¦‚æœæ— ï¼Œæ‚”äº§ç”Ÿæ­§ä¹‰ï¼‰
         
-###Ìõ¼şÅĞ¶Ï
+###æ¡ä»¶åˆ¤æ–­
     age = 3
     if age >= 18:
         print('adult')
@@ -65,7 +65,7 @@
     else:
         print('kid')
 
-### Ñ­»·
+### å¾ªç¯
     sum = 0
     for x in range(101):
         sum += x
@@ -80,11 +80,11 @@
     print sum
 
 ### dict
-×Ö·û´®¡¢Ö¤Êé¶¼¿ÉÒÔ×÷Îªkey
+å­—ç¬¦ä¸²ã€è¯ä¹¦éƒ½å¯ä»¥ä½œä¸ºkey
 
     d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
     d['Michael']
-    '''Îª·ÀÖ¹²»´æÔÚkey£¬¿ÉÒÔÊ¹ÓÃÒÔÏÂ·½·¨'''
+    '''ä¸ºé˜²æ­¢ä¸å­˜åœ¨keyï¼Œå¯ä»¥ä½¿ç”¨ä»¥ä¸‹æ–¹æ³•'''
     if 'Michael' in d:
         print(d['Michael'])
     d.get('Thomas')
@@ -92,16 +92,16 @@
     d.pop('Bob')
 
 ### set
-Ò»×ékeyµÄ¼¯ºÏ£¬²»´æ´¢value£¬ÔÚsetÖĞÃ»ÓĞÖØ¸´µÄkey
+ä¸€ç»„keyçš„é›†åˆï¼Œä¸å­˜å‚¨valueï¼Œåœ¨setä¸­æ²¡æœ‰é‡å¤çš„key
 
     s = set([1, 2, 3])
     s.add(5)
     s.remove(5)
-    s1 & s2 (½»¼¯£©
-    s1 | s2 £¨²¢¼¯£©
+    s1 & s2 (äº¤é›†ï¼‰
+    s1 | s2 ï¼ˆå¹¶é›†ï¼‰
 
-## º¯Êı
-###º¯ÊıµÄµ÷ÓÃºÍ¶¨Òå
+## å‡½æ•°
+###å‡½æ•°çš„è°ƒç”¨å’Œå®šä¹‰
 
     abs(100)
     
@@ -121,10 +121,10 @@
         reutnr nx, ny
 
     x, y = move(100, 100, 60, math.pi /6)
-    '''Êµ¼ÊÉÏ£¬·µ»ØµÄÊÇÒ»¸ötupleÖµ'''
+    '''å®é™…ä¸Šï¼Œè¿”å›çš„æ˜¯ä¸€ä¸ªtupleå€¼'''
 
-### º¯ÊıµÄ²ÎÊı
-Ä¬ÈÏ²ÎÊıÔÚºó
+### å‡½æ•°çš„å‚æ•°
+é»˜è®¤å‚æ•°åœ¨å
 
     def power(x, n=2):
         s = s
@@ -133,7 +133,7 @@
             s = s*x
         return s
 
-¿É±ä²ÎÊı
+å¯å˜å‚æ•°
 
     def calc(*numbers):
         sum = 0
@@ -146,7 +146,7 @@
     nums = (1, 2, 3)
     clas(*nums)
 
-¹Ø¼ü×Ö²ÎÊı£¬À©Õ¹º¯ÊıµÄ¹¦ÄÜ
+å…³é”®å­—å‚æ•°ï¼Œæ‰©å±•å‡½æ•°çš„åŠŸèƒ½
 
     def person(name, age, **kw):
         print(' name', name, 'other', kw)
@@ -158,14 +158,14 @@
     extra = {'city': 'Beijing', 'job': 'Enginear'}
     person('Jack', 23, **extra)
 
-ÃüÃû¹Ø¼ü×Ö²ÎÊı£¬ÓÃ*·Ö¸î£¬¿ÉÒÔÓĞÄ¬ÈÏÖµ
+å‘½åå…³é”®å­—å‚æ•°ï¼Œç”¨*åˆ†å‰²ï¼Œå¯ä»¥æœ‰é»˜è®¤å€¼
 
     def person(name, age, *, city, job):
         pass
 
     person('Jack', 24, city='Beijing', job= 'Engineer')
 
-²ÎÊı¶¨ÒåµÄË³Ğò£¬±ØÑ¡²ÎÊı¡¢Ä¬ÈÏ²ÎÊı¡¢¿É±ä/ÃüÃû²ÎÊı¡¢¹Ø¼ü×Ö²ÎÊı
+å‚æ•°å®šä¹‰çš„é¡ºåºï¼Œå¿…é€‰å‚æ•°ã€é»˜è®¤å‚æ•°ã€å¯å˜/å‘½åå‚æ•°ã€å…³é”®å­—å‚æ•°
 
     def f2(a, b, c=0 *, d, **kw):
         pass
@@ -175,13 +175,13 @@
     kw = {'d': 88, 'x': '#'}
     f2(*args, **kw)
 
-###µİ¹éº¯Êı
+###é€’å½’å‡½æ•°
     def fact(n):
         if n==1:
             return 1
         return n * fact(n-1)
 
-Ê¹ÓÃÊ±Òª·ÀÖ¹Õ»Òç³ö£¬ĞèÒªÍ¨¹ıÎ²µİ¹éÓÅ»¯£¨µ«pythonÃ»ÓĞ×öÎ²µİ¹éÓÅ»¯£¬ÎŞÓÃ£©
+ä½¿ç”¨æ—¶è¦é˜²æ­¢æ ˆæº¢å‡ºï¼Œéœ€è¦é€šè¿‡å°¾é€’å½’ä¼˜åŒ–ï¼ˆä½†pythonæ²¡æœ‰åšå°¾é€’å½’ä¼˜åŒ–ï¼Œæ— ç”¨ï¼‰
 
     def fact(n):
         return fact_iter(n, 1)
@@ -191,9 +191,9 @@
             return product
         return fact_iter(num-1, num * product)
 
-##¸ß¼¶ÌØĞÔ
+##é«˜çº§ç‰¹æ€§
 
-###ÇĞÆ¬
+###åˆ‡ç‰‡
     L[0:3]
     L[-2:]
     L[-2: -1]
@@ -201,19 +201,19 @@
     my_tuple[:3]
     'abc'[0:1]
 
-###µü´ú
+###è¿­ä»£
     for key in my_dict:
         pass
     for ch in 'ABCDD':
         pass
-    '''ÅĞ¶ÏÊÇ·ñ¿ÉÒÔµü´ú'''
+    '''åˆ¤æ–­æ˜¯å¦å¯ä»¥è¿­ä»£'''
     from collections import Iterable
     isinstance('abc', Iterable)
     
     for i, value in enumerate(['A', 'b', 'c']):
         print(i, value)
 
-###ÁĞ±íÊ½Éú³É
+###åˆ—è¡¨å¼ç”Ÿæˆ
     a = list(range(1, 11))
     [x * x for x in range(1, 11) if x % 2 == 0]
     [m + n for m in 'ABC' for n in 'XYZ']
@@ -229,8 +229,8 @@
 
 
 
-###Éú³ÉÆ÷
-generrator£¬±£´æµÄÊÇËã·¨
+###ç”Ÿæˆå™¨
+generratorï¼Œä¿å­˜çš„æ˜¯ç®—æ³•
 
     g = (x * x for x in range(10))
     for n in g:
@@ -239,19 +239,19 @@ generrator£¬±£´æµÄÊÇËã·¨
     def fib(max):
         n, a, b = 0, 0, 1
         while n < max:
-            yield b '''ÖØÒª£¬fibÊÇ¸öÉú³ÉÆ÷ÁË'''
+            yield b '''é‡è¦ï¼Œfibæ˜¯ä¸ªç”Ÿæˆå™¨äº†'''
             a, b = b, a + b
             n +=1
         return 'done'
 
-### µü´úÆ÷
-forÑ­»·Ê¹ÓÃ·¶Î§£¬Iterable£¬
+### è¿­ä»£å™¨
+forå¾ªç¯ä½¿ç”¨èŒƒå›´ï¼ŒIterableï¼Œ
 - list, tuple, dict, set, str
 - generator //Iterator
 
-##º¯ÊıÊ½±à³Ì
+##å‡½æ•°å¼ç¼–ç¨‹
 
-###»ù±¾
+###åŸºæœ¬
 
     def testFunc(x, func):
         return func(x)
@@ -281,7 +281,7 @@ str2int
             return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
     return reduce(fn, map(char2num, '13579'))
 
-lambda º¯Êı
+lambda å‡½æ•°
 
     from functools import reduce
     def char2num(s):
@@ -297,14 +297,14 @@ lambda º¯Êı
     
     list(filter(lambda x: x and x.strip(), ['a', 'b ', None, 'c  ']))
 
-ËØÊıÉ¸Ñ¡
+ç´ æ•°ç­›é€‰
 
     def _not_devisible(n):
         return lambad x: x%n > 0
-    #Éú³ÉÆ÷
+    #ç”Ÿæˆå™¨
     def primes():
         yield 2
-        it = _odd_iter() # ³õÊ¼ĞòÁĞ
+        it = _odd_iter() # åˆå§‹åºåˆ—
         while True:
             n = next(it)
             yield n 
@@ -316,13 +316,13 @@ lambda º¯Êı
         else:
             break
 
-### sorted ÅÅĞòËã·¨
+### sorted æ’åºç®—æ³•
 
     sorted(my_list, key=abs)
 
     sorted(my_str_list, key=str.lower, reverse=True)
 
-###·µ»Øº¯Êı
+###è¿”å›å‡½æ•°
 
     def lazy_sum(*args):
         def sum():
@@ -335,7 +335,7 @@ lambda º¯Êı
     f = lazy_sum(1, 3, 4, 5)
     f()
 
-±Õ°ü
+é—­åŒ…
 
     def count():
         def f(j)
@@ -348,7 +348,7 @@ lambda º¯Êı
 
     f1, f2 , f3 = count()
     
-###×°ÊÎÆ÷
+###è£…é¥°å™¨
 
     def log(func):
         def wrapper(*args, **kw):
@@ -361,13 +361,13 @@ lambda º¯Êı
         pass
     now.__name__
 
-###Æ«º¯Êı
+###åå‡½æ•°
 
     import functools
     int2 = functools.partial(int, base=2)
     int('10000')
 
-##Ä£¿é
+##æ¨¡å—
 
     #!/usr/bin/env python3
     #-*- coding: utf-8 -*-
@@ -384,25 +384,25 @@ lambda º¯Êı
         else:
             print('Too many arguments!')
 
-    #ÔÚÖ±½ÓÔËĞĞÎÄ¼şÊ±²ÅÔËĞĞ£¬ÆäËûÎÄ¼şµ¼ÈëÊ±£¬²»ÔËĞĞ
+    #åœ¨ç›´æ¥è¿è¡Œæ–‡ä»¶æ—¶æ‰è¿è¡Œï¼Œå…¶ä»–æ–‡ä»¶å¯¼å…¥æ—¶ï¼Œä¸è¿è¡Œ
     if __name__== '__main__'
         test()
 
-Íâ²¿²»ÒıÓÃµÄº¯Êı¶¨ÒåÎªprivate£¬ _private_sss()
+å¤–éƒ¨ä¸å¼•ç”¨çš„å‡½æ•°å®šä¹‰ä¸ºprivateï¼Œ _private_sss()
 
-µÚÈı·½Ä£¿é
+ç¬¬ä¸‰æ–¹æ¨¡å—
     pypi.python.org
     pip install Pillow
 
-ÔËĞĞÊ±ËÑË÷Ä¿Â¼Îª  sys.path£¬½«×Ô¶¨ÒåÄ¿Â¼¼ÓÈëËÑË÷Ä¿Â¼
+è¿è¡Œæ—¶æœç´¢ç›®å½•ä¸º  sys.pathï¼Œå°†è‡ªå®šä¹‰ç›®å½•åŠ å…¥æœç´¢ç›®å½•
 
     import sys
     sys.path.append('/xxx/')
 
-»òÕß ĞŞ¸Ä»·¾³±äÁ¿ PYTHONPATH
+æˆ–è€… ä¿®æ”¹ç¯å¢ƒå˜é‡ PYTHONPATH
 
-##ÃæÏò¶ÔÏó±à³Ì
-###ÀàºÍÊµÀı
+##é¢å‘å¯¹è±¡ç¼–ç¨‹
+###ç±»å’Œå®ä¾‹
 
     class Student(object):
         def __init__(self, name, score =0):
@@ -423,11 +423,11 @@ lambda º¯Êı
                 raise ValueError('bad score')
             self.__score = score
 
-- `__x`ÊÇË½ÓĞ±äÁ¿£¬²»ÄÜ·ÃÎÊ£¬Êµ¼Ê¿ÉÒÔÍ¨¹ı _classname__x·ÃÎÊ£¬µ«²»ÍÆ¼ö
-- `__x__`ÊÇÌØÊâ±äÁ¿£¬¿ÉÒÔ·ÃÎÊ
-- `_name` ¿ÉÒÔ·ÃÎÊ£¬µ«°´ÕÕÔ¼¶¨£¬×îºÃÒ²²»Òª·ÃÎÊ
+- `__x`æ˜¯ç§æœ‰å˜é‡ï¼Œä¸èƒ½è®¿é—®ï¼Œå®é™…å¯ä»¥é€šè¿‡ _classname__xè®¿é—®ï¼Œä½†ä¸æ¨è
+- `__x__`æ˜¯ç‰¹æ®Šå˜é‡ï¼Œå¯ä»¥è®¿é—®
+- `_name` å¯ä»¥è®¿é—®ï¼Œä½†æŒ‰ç…§çº¦å®šï¼Œæœ€å¥½ä¹Ÿä¸è¦è®¿é—®
 
-### ¼Ì³ĞºÍ¶àÌ¬
+### ç»§æ‰¿å’Œå¤šæ€
 
     class Animal(object):
         def run(self):
@@ -444,7 +444,7 @@ lambda º¯Êı
         animal.run()
         animal.run()
 
-###»ñÈ¡¶ÔÏóĞÅÏ¢
+###è·å–å¯¹è±¡ä¿¡æ¯
 
 - type()
         type(123)
@@ -457,14 +457,14 @@ lambda º¯Êı
         stattr()
         hasattr()
 
-###ÊµÀıÊôĞÔºÍÀàÊôĞÔ
+###å®ä¾‹å±æ€§å’Œç±»å±æ€§
     class Student(object):
-        name = 'Student' #ÀàÊôĞÔ£¬ÈçÊµÀıÃ»ÓĞnameÊôĞÔ£¬ÔòÄ¬ÈÏ·µ»ØÕâ¸ö
+        name = 'Student' #ç±»å±æ€§ï¼Œå¦‚å®ä¾‹æ²¡æœ‰nameå±æ€§ï¼Œåˆ™é»˜è®¤è¿”å›è¿™ä¸ª
 
-##ÃæÏò¶ÔÏó¸ß¼¶±à³Ì
+##é¢å‘å¯¹è±¡é«˜çº§ç¼–ç¨‹
 
 ### __slots__
-- ¶¯Ì¬°ó¶¨ÊôĞÔºÍ·½·¨
+- åŠ¨æ€ç»‘å®šå±æ€§å’Œæ–¹æ³•
         class Student(object):            
             pass
 
@@ -474,10 +474,10 @@ lambda º¯Êı
         def set_age(self, age)
             self.age = age
         from types import MethodType
-        s.set_age = MethodType(set_age, s) # ¸øÊµÀı°ó¶¨
+        s.set_age = MethodType(set_age, s) # ç»™å®ä¾‹ç»‘å®š
         Student.set_score = MethodType(set_score, Student)
 
-- ÏĞÖÃÊµÀıµÄÊôĞÔ£¬¶Ô×ÓÀà²»Æğ×÷ÓÃ
+- é—²ç½®å®ä¾‹çš„å±æ€§ï¼Œå¯¹å­ç±»ä¸èµ·ä½œç”¨
     class Student(object):
         __slots__ =  ('name', 'age')
 
@@ -496,7 +496,7 @@ lambda º¯Êı
         def age(self):
         return 2015 - self._birth
 
-###¶àÖØ¼Ì³Ğ
+###å¤šé‡ç»§æ‰¿
 
     class Dog(Anamal, RunableMixIn, CarnivorousMixIn):
         pass
@@ -504,9 +504,9 @@ lambda º¯Êı
     class MyTcpServer(TCPServer, ForkingMixIn):
         pass
 
-###¶¨ÖÆÀà
-- __str__ ¸ü¸ÄprintÖĞµÄÊä³ö
-- __iter__ ÓÃÓÚµü´ú£¬·µ»Øµü´ú¶ÓĞÎ£¬×Ô¶¯µ÷ÓÃ__next()£¬ÖªµÀÓöµ½StopIteration
+###å®šåˆ¶ç±»
+- __str__ æ›´æ”¹printä¸­çš„è¾“å‡º
+- __iter__ ç”¨äºè¿­ä»£ï¼Œè¿”å›è¿­ä»£é˜Ÿå½¢ï¼Œè‡ªåŠ¨è°ƒç”¨__next()ï¼ŒçŸ¥é“é‡åˆ°StopIteration
         class Fib(Object):
             def __init__(self):
                 self a, self, b = 0, 1
@@ -519,7 +519,7 @@ lambda º¯Êı
                 if self.a > 10000:
                     raise StopIteration()
                 return self.a
-- __getitem__ ÀûÓÃÏÂ±ê£¬ÇĞÆ¬È¡Êı¾İ
+- __getitem__ åˆ©ç”¨ä¸‹æ ‡ï¼Œåˆ‡ç‰‡å–æ•°æ®
         class Fib(object):
             def __getitem__(self, n):
                 if isinstance(n, int):
@@ -539,12 +539,12 @@ lambda º¯Êı
                             L.append(a)
                         a, b = b, a+b
                     return L
-- __getattr__ ÖØ¶¨Ïò
+- __getattr__ é‡å®šå‘
         class Student(object):
             def __getattr__(self, attr):
-                if attr == ¡¯age':
+                if attr == â€™age':
                     return lambda: 25
-- __call__ Ö±½Ó¶ÔÊµÀıµ÷ÓÃ
+- __call__ ç›´æ¥å¯¹å®ä¾‹è°ƒç”¨
         class Student(object):
             def __call__:
                 pass
@@ -554,7 +554,7 @@ lambda º¯Êı
 
         callable(Student)
 
-###Ã¶¾Ù·¨
+###æšä¸¾æ³•
 
     from enum import Enum, unique
     
@@ -567,34 +567,34 @@ lambda º¯Êı
     Weekday['Sun']
     Weekday[0]
 
-###Ê¹ÓÃÔªÀà
+###ä½¿ç”¨å…ƒç±»
  type()
 
     def fn(self, name='world'):
         pass
     
-    Hello = type('Hello', (object,), dict(hello=fn)) #´´½¨Hello class
+    Hello = type('Hello', (object,), dict(hello=fn)) #åˆ›å»ºHello class
     h = Hello()
     h.hello()
 
-metaclass()£¬ÏÈ¶¨Òåmetaclass£¬ ´´½¨Àà£¬´´½¨ÊµÀı
+metaclass()ï¼Œå…ˆå®šä¹‰metaclassï¼Œ åˆ›å»ºç±»ï¼Œåˆ›å»ºå®ä¾‹
 
     class ListMetaclass(type):
         def __new__(cls, name, bases, attrs):
             attrs['add'] = lambda self, value: self.append(value)
             return type.__new__(cls, name, bases, attrs)
 
-    class MyList(list, metaclass=ListMetaclass): # ×Ô¶¯Ìí¼Óadd·½·¨
+    class MyList(list, metaclass=ListMetaclass): # è‡ªåŠ¨æ·»åŠ addæ–¹æ³•
         pass
 
-ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
-Àı×Ó
+ORM "Object Relational Mapping" å¯¹è±¡å…³ç³»æ˜ å°„
+ä¾‹å­
     
     class User(Model):
         id = IntegerField('id')
         #...
 
-ÆäÖĞ¸¸ÀàModelºÍIntegerFieldÓÉORM¿ò¼ÜÌá¹©£¬saveµÈÄ§Êõ·½·¨ÓÉmetaclassÌá¹©
+å…¶ä¸­çˆ¶ç±»Modelå’ŒIntegerFieldç”±ORMæ¡†æ¶æä¾›ï¼Œsaveç­‰é­”æœ¯æ–¹æ³•ç”±metaclassæä¾›
 
     def FIeld(object):
         def __init__(self, name, column_type):
@@ -646,14 +646,14 @@ ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
             sql = 'insert into %s (%s) values (%s)' %(self.__table__, ','.join(fields), ','.join(params))
             
 
-µ±ÓÃ»§¶¨ÒåÒ»¸öclass User(Model)Ê±£¬Python½âÊÍÆ÷Ê×ÏÈÔÚUser¶¨ÒåÖĞÑ°ÕÒmetaclass£¬ÈçÃğÓĞ£¬ÔÚ¸¸ÀàÖĞÑ°ÕÒ£¬ÔÚModelMetaclassÖĞ£¬ÅÅ³ıÁË¶ÔModelµÄĞŞ¸Ä£¬ÔÚµ±Ç°ÀàÖĞ²éÕÒ¶¨ÒåµÄÊôĞÔ£¬¼ÓÈë__mappings__ÖĞ£¬Í¬Ê±´ÓÀàÊôĞÔÖĞÉ¾³ı£¬°Ñ±íÃû´æ´¢µ½__table__ÖĞ
+å½“ç”¨æˆ·å®šä¹‰ä¸€ä¸ªclass User(Model)æ—¶ï¼ŒPythonè§£é‡Šå™¨é¦–å…ˆåœ¨Userå®šä¹‰ä¸­å¯»æ‰¾metaclassï¼Œå¦‚ç­æœ‰ï¼Œåœ¨çˆ¶ç±»ä¸­å¯»æ‰¾ï¼Œåœ¨ModelMetaclassä¸­ï¼Œæ’é™¤äº†å¯¹Modelçš„ä¿®æ”¹ï¼Œåœ¨å½“å‰ç±»ä¸­æŸ¥æ‰¾å®šä¹‰çš„å±æ€§ï¼ŒåŠ å…¥__mappings__ä¸­ï¼ŒåŒæ—¶ä»ç±»å±æ€§ä¸­åˆ é™¤ï¼ŒæŠŠè¡¨åå­˜å‚¨åˆ°__table__ä¸­
 
-##´íÎó¡¢µ÷ÊÔºÍ²âÊÔ
+##é”™è¯¯ã€è°ƒè¯•å’Œæµ‹è¯•
 
-##IO±à³Ì
+##IOç¼–ç¨‹
 
-###ÎÄ¼ş¶ÁĞ´
-####¶ÁÎÄ¼ş
+###æ–‡ä»¶è¯»å†™
+####è¯»æ–‡ä»¶
     f = open('./test.txt', 'r')
     f.read()
     f.close()
@@ -672,14 +672,14 @@ ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
         print(line.strip())
 
 ####file-like Object
-ÓĞ read()·½·¨µÄ¶ÔÏó
-####¶ş½øÖÆ
+æœ‰ read()æ–¹æ³•çš„å¯¹è±¡
+####äºŒè¿›åˆ¶
     f = open('./test.txt', 'rb')
 
-####×Ö·û±àÂë
+####å­—ç¬¦ç¼–ç 
     f = open('./test.txt', 'rb', encoding = 'gbk', error='ignor')
 
-####Ğ´ÎÄ¼ş
+####å†™æ–‡ä»¶
     with open('./test.txt', 'w') as f:
         f.write('he;')
 
@@ -699,18 +699,18 @@ ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
 ###BytesIO
     form io import ByteIO
     f = ByteIO()
-    f.write('ÖĞÎÄ¡®, encode('utf-8'))
+    f.write('ä¸­æ–‡â€˜, encode('utf-8'))
 
-###²Ù×÷ÎÄ¼şºÍÄ¿Â¼
+###æ“ä½œæ–‡ä»¶å’Œç›®å½•
     import os
 
-####ÏµÍ³ĞÅÏ¢
+####ç³»ç»Ÿä¿¡æ¯
     os.name
     os.uname()
     os.environ
     os.enviro.get('key')
     
-####²Ù×÷ÎÄ¼şºÍÄ¿Â¼
+####æ“ä½œæ–‡ä»¶å’Œç›®å½•
     os.path.abspath('.')
     tmp_path = os.path.join('/Users/'. 'testdor')
     os.mkdir(tmp_path)
@@ -724,8 +724,8 @@ ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
  
     [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splittext(x)[1]=='py]
 
-###ĞòÁĞ»¯
-°É±äÁ¿´ÓÄÚ´æ±à³Ì¿Î´æ´¢ºÍ´«ÊäµÄ¹ı³Ì³ÆÎªĞòÁĞ»¯£¬PythonÖĞ½Ğ pickling£¬ÆäËûÓïÑÔÖĞserialization, marshaling, flattening
+###åºåˆ—åŒ–
+å§å˜é‡ä»å†…å­˜ç¼–ç¨‹è¯¾å­˜å‚¨å’Œä¼ è¾“çš„è¿‡ç¨‹ç§°ä¸ºåºåˆ—åŒ–ï¼ŒPythonä¸­å« picklingï¼Œå…¶ä»–è¯­è¨€ä¸­serialization, marshaling, flattening
 
     import pickle
     d = dict('name='bob', age=20, score=88)
@@ -748,14 +748,14 @@ ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
 
     json.load(json_str)
 
-¶ÔÏóµÄjson·½·¨
+å¯¹è±¡çš„jsonæ–¹æ³•
 
     print(json.dumps(s, default=student2dict))
     (json.dumps(s, default=lambda obj: obj.__dict__)
 
-##½ø³ÌºÍÏß³Ì
+##è¿›ç¨‹å’Œçº¿ç¨‹
 
-### ¶à½ø³Ì
+### å¤šè¿›ç¨‹
 #### fork()
     import os
     
@@ -789,11 +789,11 @@ ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
         p.close()
         p.join()
 
-####×Ó½ø³Ì
+####å­è¿›ç¨‹
     import subprocess
     r = subprocess.call(['nslookup', 'www.python.org'])
 
-####½ø³Ì¼äÍ¨ĞÅ
+####è¿›ç¨‹é—´é€šä¿¡
     from multiprocessing import Process, Queue
     import os, time, random
 
@@ -815,7 +815,7 @@ ORM "Object Relational Mapping" ¶ÔÏó¹ØÏµÓ³Éä
         pr.terminate()
 
     
-###¶àÏß³Ì
+###å¤šçº¿ç¨‹
     import time, threading
     
     def loop():
@@ -836,11 +836,11 @@ Lock
     import threading
     local_school = threading.local()
 
-###·Ö²¼Ê½½ø³Ì
-- Ó¦¸ÃÓÅÑ¡½ø³Ì£¬¸üÎÈ¶¨£¬¿ÉÒÔ²¿Êğµ½¶àÌ¨»úÆ÷
-- multiprocessing ÖĞµÄ managers Ä£¿éÖ§³Ö°Ñ½ø³Ì·Ö²¼µ½¶àÌ¨»úÆ÷ÉÏ
+###åˆ†å¸ƒå¼è¿›ç¨‹
+- åº”è¯¥ä¼˜é€‰è¿›ç¨‹ï¼Œæ›´ç¨³å®šï¼Œå¯ä»¥éƒ¨ç½²åˆ°å¤šå°æœºå™¨
+- multiprocessing ä¸­çš„ managers æ¨¡å—æ”¯æŒæŠŠè¿›ç¨‹åˆ†å¸ƒåˆ°å¤šå°æœºå™¨ä¸Š
 
-·şÎñ½ø³Ì
+æœåŠ¡è¿›ç¨‹
     # task_master.py
     import random, time, queue
     form multiprocessing.managers import BaseManager
@@ -871,7 +871,7 @@ Lock
             print ('result: %s', %r)
 
     manager.shutdown()
-ÁíÒ»Ì¨»úÆ÷ÉÏÆô¶¯½ø³Ì
+å¦ä¸€å°æœºå™¨ä¸Šå¯åŠ¨è¿›ç¨‹
     # task_worker.py
     import time, sys, queue
     from multiprocessing.managers import BaseManager
@@ -903,35 +903,35 @@ Lock
     print(' worker exit')    
 
 
-##ÕıÔò±í´ïÊ½
-###»ù±¾ÕıÔò±í´ïÊ½
-- \dÆ¥ÅäÒ»¸öÊı×Ö£¬\w Æ¥ÅäÊı×Ö»ò×ÖÄ¸£¬ . Æ¥ÅäÈÎÒâ×Ö·û
-- \* ±íÊ¾ÈÎÒâ¸ö×Ö·û£¬ +±íÊ¾ÖÁÉÙÒ»¸ö1¸ö×Ö·û£¬ {n, m}±íÊ¾nµ½m¸ö×Ö·û
+##æ­£åˆ™è¡¨è¾¾å¼
+###åŸºæœ¬æ­£åˆ™è¡¨è¾¾å¼
+- \dåŒ¹é…ä¸€ä¸ªæ•°å­—ï¼Œ\w åŒ¹é…æ•°å­—æˆ–å­—æ¯ï¼Œ . åŒ¹é…ä»»æ„å­—ç¬¦
+- \* è¡¨ç¤ºä»»æ„ä¸ªå­—ç¬¦ï¼Œ +è¡¨ç¤ºè‡³å°‘ä¸€ä¸ª1ä¸ªå­—ç¬¦ï¼Œ {n, m}è¡¨ç¤ºnåˆ°mä¸ªå­—ç¬¦
         \d{3}\s+\d{3,8}
         \d(3)\-\d(3,8)
-- ¾«È·Æ¥Åä
+- ç²¾ç¡®åŒ¹é…
         [0-9a-zA-Z\_]{0, 19}
         [P|python]
-- ^ĞĞ¿ªÍ·
+- ^è¡Œå¼€å¤´
         ^\d
-- \$ĞĞ½áÊø
+- \$è¡Œç»“æŸ
        \ \d\$
-###reÄ£¿é
-- Ê¹ÓÃrÇ°×º£¬±íÊ¾ÊÇÒ»¸öÕıÔò±í´ïÊ½ s = r'ABC\-001'
-- ÊÇ·ñÆ¥Åä
+###reæ¨¡å—
+- ä½¿ç”¨rå‰ç¼€ï¼Œè¡¨ç¤ºæ˜¯ä¸€ä¸ªæ­£åˆ™è¡¨è¾¾å¼ s = r'ABC\-001'
+- æ˜¯å¦åŒ¹é…
         import re
         re.match(r'\d{3}\-\d{3,8}$', '010-12315')
-- ÇĞ·Ö×Ö·û´®
+- åˆ‡åˆ†å­—ç¬¦ä¸²
         re.split(r'\s+', 'a, b  c')
-- ·Ö×é£¬ ÀûÓÃ()±íÊ¾ÒªÌáÈ¡µÄ·Ö×é
+- åˆ†ç»„ï¼Œ åˆ©ç”¨()è¡¨ç¤ºè¦æå–çš„åˆ†ç»„
         m = re.match(r'^(\d{3})-(\d{3, 8})$', '010-12345')
         m.group(0)
         m.group(1)
         m.group(2)
-        #Ê±¼äÆ¥Åä
+        #æ—¶é—´åŒ¹é…
         m = re.match(r'^(0[0-9]|1[0-9]|2[0-3]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])\:(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|[0-9])$', t)
 
-## ³£ÓÃÄÚ½¨Ä£¿é
+## å¸¸ç”¨å†…å»ºæ¨¡å—
 ###datetime
     from datetime import datetime
     now = datetime.now()
@@ -959,17 +959,17 @@ Lock
         Point = namedtuple('Point', ['x', 'y'])
         p = Point(1, 2)
         p.x
-- deque ¸ßĞ§ÊµÏÖ²åÈëºÍÉ¾³ıµÄË«ÏòÁĞ±í£¬Ê¹ÓÃÓë¶ÓÁĞºÍÕ»
+- deque é«˜æ•ˆå®ç°æ’å…¥å’Œåˆ é™¤çš„åŒå‘åˆ—è¡¨ï¼Œä½¿ç”¨ä¸é˜Ÿåˆ—å’Œæ ˆ
         from collections import deque
         q = deque(['a'. 'b'. 'c'])
         q.append('x')
-        q.appendleft('y') #¿ªÊ¼²åÈë
-- defaultdict dict£¬¿ÉÒÔ²»´æÔÚÊ±·µ»ØÄ¬ÈÏÖµ¶ø²»ÊÇ·µ»ØKeyError
+        q.appendleft('y') #å¼€å§‹æ’å…¥
+- defaultdict dictï¼Œå¯ä»¥ä¸å­˜åœ¨æ—¶è¿”å›é»˜è®¤å€¼è€Œä¸æ˜¯è¿”å›KeyError
         from collections import defaultdict
         dd = defaultdict(lambda: 'N/A')
         dd['key1'] = 'abc'
         dd['key2']
-- OrderedDict keyÊ±ÓĞĞòµÄ
+- OrderedDict keyæ—¶æœ‰åºçš„
         from collections import OrderedDict
         d = dict([('a',1), ('b', 2), ('c', 3)])
         od = OrderedDict([('a',1), ('b', 2), ('c', 3)])
@@ -980,29 +980,29 @@ Lock
             c[ch] = c[ch] +1
 
 ###base64
-- Ô­Àí
-    - ×¼±¸Ò»¸ö°üº¬64¸ö×Ö·ûµÄÊı×é ['A', 'B', ... 'a', 'b', ... '0', '1', ... '+', '/']
-    - ¶Ô¶ş½øÖÆ´¦Àí£¬Ã¿3¸ö×Ö½ÚÒ»×é£¬Ò»¹²3*8=24bit£¬»®·ÖÎª4×é£¬Ã¿×éÕıºÃ6bit
-    - °Ñ4×é·Ö±ğÓÃ64×Ö·ûµÄÊı×é±íÊ¾£¬µÃµ½±àÂëºóµÄ×Ö·û´®
-    - ×÷ÓÃ½«3×Ö½ÚµÄ¶ş½øÖÆÊı¾İ±àÂëÎª4×Ö½ÚµÄÎÄ±¾Êı¾İ
-    - ¶ş½øÖÆ×Ö½ÚÊı²»ÊÇ3µÄ±¶Êı£¬ÓÃ\x00²¹Æë£¬²¢ÔÚ±àÂëµÄÄ©Î²¼ÓÉÏ1¸ö»òÕß2¸ö=ºÅ£¬±íÊ¾²¹µÄ×Ö½ÚÊı
-- ÄÚÖÃbase64Ä£¿é
+- åŸç†
+    - å‡†å¤‡ä¸€ä¸ªåŒ…å«64ä¸ªå­—ç¬¦çš„æ•°ç»„ ['A', 'B', ... 'a', 'b', ... '0', '1', ... '+', '/']
+    - å¯¹äºŒè¿›åˆ¶å¤„ç†ï¼Œæ¯3ä¸ªå­—èŠ‚ä¸€ç»„ï¼Œä¸€å…±3*8=24bitï¼Œåˆ’åˆ†ä¸º4ç»„ï¼Œæ¯ç»„æ­£å¥½6bit
+    - æŠŠ4ç»„åˆ†åˆ«ç”¨64å­—ç¬¦çš„æ•°ç»„è¡¨ç¤ºï¼Œå¾—åˆ°ç¼–ç åçš„å­—ç¬¦ä¸²
+    - ä½œç”¨å°†3å­—èŠ‚çš„äºŒè¿›åˆ¶æ•°æ®ç¼–ç ä¸º4å­—èŠ‚çš„æ–‡æœ¬æ•°æ®
+    - äºŒè¿›åˆ¶å­—èŠ‚æ•°ä¸æ˜¯3çš„å€æ•°ï¼Œç”¨\x00è¡¥é½ï¼Œå¹¶åœ¨ç¼–ç çš„æœ«å°¾åŠ ä¸Š1ä¸ªæˆ–è€…2ä¸ª=å·ï¼Œè¡¨ç¤ºè¡¥çš„å­—èŠ‚æ•°
+- å†…ç½®base64æ¨¡å—
         import base64
         base64.b64encode('...')
         base64.b64decode('...')
 - urlsafe + /  --> -_
         base64.urlsafe_b64encode()
         base64.urlsafe_b64decode()
-- ÓÉÓÚ= ÔÚurlµÈÖĞµÄÆçÒå£¬ºÜ¶àËã·¨±àÂëºó°Ñ=È¥µô
+- ç”±äº= åœ¨urlç­‰ä¸­çš„æ­§ä¹‰ï¼Œå¾ˆå¤šç®—æ³•ç¼–ç åæŠŠ=å»æ‰
 
-### struct ½â¾öbytesºÍÆäËû¶ş½øÖÆÊı¾İÀàĞÍµÄ×ª»»
+### struct è§£å†³byteså’Œå…¶ä»–äºŒè¿›åˆ¶æ•°æ®ç±»å‹çš„è½¬æ¢
     import struct
     struct.pack('>I', 10240099)
     s = b'\x42\x4d\x38\x8c\x0a\x00\x00\x00\x00\x00\x36\x00\x00\x00\x28\x00\x00\x00\x80\x02\x00\x00\x68\x01\x00\x00\x01\x00\x18\x00'
     s.unpack('<ccIIIIIIHH', s)
 
-### hahslib Ìá¹©ÖØÒªµÄÔÙÒªËã·¨£¬ÈçMD5£¬SHA1µÈ
-- »ù±¾ÓÃ·¨
+### hahslib æä¾›é‡è¦çš„å†è¦ç®—æ³•ï¼Œå¦‚MD5ï¼ŒSHA1ç­‰
+- åŸºæœ¬ç”¨æ³•
        import hashlib
     
         md5 = hashlib.md5()
@@ -1013,7 +1013,7 @@ Lock
         sha1 = hashlib.sha1()
         #...
 
-- ¼ÓÑÎ£¬¿ÉÒÔ½«µÇÂ¼Ãû×÷ÎªsaltµÄÒ»²¿·Ö
+- åŠ ç›ï¼Œå¯ä»¥å°†ç™»å½•åä½œä¸ºsaltçš„ä¸€éƒ¨åˆ†
         def calc_md5(password):
             return get_md5(password + 'the-Salt')
 
@@ -1035,8 +1035,8 @@ Lock
         print(key, list(group))
 
 ###XML
-- ²Ù×÷·½·¨ÓĞDOMºÍSAX£¬DOM½«Õû¸öXML¶ÁÈëÄÚ´æ£¬Õ¼ÓÃÄÚ´æ´ó£¬µ«¿ÉÒÔÈÎÒâ±éÀúÊ÷µÄ½Úµã¡£SAXÁ÷Ä£Ê½£¬Õ¼ÓÃÄÚ´æĞ¡£¬½âÎö¿ì£¬µ«ÒªÎÒÃÇ×Ô¼º´¦ÀíÊÂ¼ş
-- pythonÖĞÊ¹ÓÃSAX½âÎöXML£¬¹ØĞÄµÄÊ±¼äÍ¨³£ÓĞstart_element(<a href="/">), end_element(</a>), char_data(python)
+- æ“ä½œæ–¹æ³•æœ‰DOMå’ŒSAXï¼ŒDOMå°†æ•´ä¸ªXMLè¯»å…¥å†…å­˜ï¼Œå ç”¨å†…å­˜å¤§ï¼Œä½†å¯ä»¥ä»»æ„éå†æ ‘çš„èŠ‚ç‚¹ã€‚SAXæµæ¨¡å¼ï¼Œå ç”¨å†…å­˜å°ï¼Œè§£æå¿«ï¼Œä½†è¦æˆ‘ä»¬è‡ªå·±å¤„ç†äº‹ä»¶
+- pythonä¸­ä½¿ç”¨SAXè§£æXMLï¼Œå…³å¿ƒçš„æ—¶é—´é€šå¸¸æœ‰start_element(<a href="/">), end_element(</a>), char_data(python)
         <a href="/">python</a>
 
         from xml.parsers.expat import PaserCreate
@@ -1064,7 +1064,7 @@ Lock
         parser.CharacterDataHandler = handler.char_data
         parser.Parser(xml)
 
-- Éú³ÉXML£¬Æ´½Ó×Ö·û´®
+- ç”ŸæˆXMLï¼Œæ‹¼æ¥å­—ç¬¦ä¸²
         
 ### HTMLParser
     from html.parser import HTMLParser
@@ -1108,22 +1108,22 @@ Lock
 - post
 - handler
             
-## ³£ÓÃµÚÈı·½Ä£¿é
-»ù±¾ËùÓĞµÚÈı·½Ä£¿é¶¼ÔÚPyPIÉÏ×¢²á
+## å¸¸ç”¨ç¬¬ä¸‰æ–¹æ¨¡å—
+åŸºæœ¬æ‰€æœ‰ç¬¬ä¸‰æ–¹æ¨¡å—éƒ½åœ¨PyPIä¸Šæ³¨å†Œ
     
 ### PIL (2.7) Pillow(3.x) 
-Í¼Ïñ²Ù×÷
+å›¾åƒæ“ä½œ
 
 ## virtualenv 
-python ¶à°æ±¾²¢´æ
+python å¤šç‰ˆæœ¬å¹¶å­˜
 
-##Í¼ĞÎ½çÃæ
-×Ô´øTkinter£¬ÆäËûÓĞwxWiddgets, Qt, GTK
+##å›¾å½¢ç•Œé¢
+è‡ªå¸¦Tkinterï¼Œå…¶ä»–æœ‰wxWiddgets, Qt, GTK
 
-## ÍøÂç±à³Ì
+## ç½‘ç»œç¼–ç¨‹
 
-### TCP±à³Ì
-####¿Í»§¶Ë
+### TCPç¼–ç¨‹
+####å®¢æˆ·ç«¯
     import socket
 
     s = socket.socket(socket.AF_INET, SOCK_STREAM)
@@ -1143,7 +1143,7 @@ python ¶à°æ±¾²¢´æ
     
     s.close()
 
-####·şÎñÆ÷
+####æœåŠ¡å™¨
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('127.0.0.1', 9999))
     s.listen(5)
@@ -1163,31 +1163,31 @@ python ¶à°æ±¾²¢´æ
             sock.send(('hello, %s' %data).encode('utf-8'))
         sock.close()
 
-###UDP±à³Ì
-·şÎñÆ÷
+###UDPç¼–ç¨‹
+æœåŠ¡å™¨
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    # °ó¶¨¶Ë¿Ú:
+    # ç»‘å®šç«¯å£:
     s.bind(('127.0.0.1', 9999))
     print('Bind UDP on 9999...')
     while True:
-        # ½ÓÊÕÊı¾İ:
+        # æ¥æ”¶æ•°æ®:
         data, addr = s.recvfrom(1024)
         print('Received from %s:%s.' % addr)
         s.sendto(b'Hello, %s!' % data, addr)
-¿Í»§¶Ë
+å®¢æˆ·ç«¯
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     for data in [b'Michael', b'Tracy', b'Sarah']:
-        # ·¢ËÍÊı¾İ:
+        # å‘é€æ•°æ®:
         s.sendto(data, ('127.0.0.1', 9999))
-        # ½ÓÊÕÊı¾İ:
+        # æ¥æ”¶æ•°æ®:
         print(s.recv(1024).decode('utf-8'))
     s.close()
 
-## µç×ÓÓÊ¼ş
+## ç”µå­é‚®ä»¶
 ###SMTP
 ###POP3
 
-## Êı¾İ¿â
+## æ•°æ®åº“
 ###SQLLite
     import sqlite3
     conn = sqlite3.connect('test.db')
@@ -1205,10 +1205,10 @@ python ¶à°æ±¾²¢´æ
     import mysql.connector
     conn = mysql.connector.connect(user='root', passowrd='', database='test')
     cursor = conn.cursor()    
-    ##ÆäËûÀàËÆ
+    ##å…¶ä»–ç±»ä¼¼
 
-###Ê¹ÓÃSQLAlchemy
- Python ÖĞ×îÓĞÃûµÄORM¿ò¼Ü
+###ä½¿ç”¨SQLAlchemy
+ Python ä¸­æœ€æœ‰åçš„ORMæ¡†æ¶
     $ pip3 install sqlalchemy
     
     from sqlalchemy import Column, String, create_engine
@@ -1236,38 +1236,38 @@ python ¶à°æ±¾²¢´æ
     session.close()
 
 
-## Web¿ª·¢
-### HTTP¼ò½é
-####ÇëÇóÁ÷³Ì
-1. ä¯ÀÀÆ÷Ïò·şÎñÆ÷·¢ËÍHTTPÇëÇó£¬ÇëÇó°üÀ¨£º
-    - ·½·¨£ºGET½öÇëÇó×ÊÔ´£¬POST¸½´øÓÃ»§Êı¾İ
-    - Â·¾¶£º/full/url/path
-    - ÓòÃû£ºÓÉHostÍ·Ö¸¶¨£ºHost: www.sina.com.cn
-    - ÆäËûÏà¹ØHeader
-    - POST·½·¨°üº¬Ò»¸öBody£¬°üº¬ÓÃ»§Êı¾İ
-2. ·şÎñÆ÷ÏìÓ¦ÇëÇó£¬ÇëÇó°üÀ¨
-    - ÏìÓ¦´úÂë£º200 ±íÊ¾³É¹¦£¬3xx±íÊ¾ÖØ¶¨Ïò£¬4xx±íÊ¾¿Í»§¶Ë·¢ËÍÇëÇóÓĞ´íÎó£¬5xx±íÊ¾·şÎñÆ÷¶Ë´¦ÀíÊ±·¢ÉúÁË´íÎó
-    - ÏìÓ¦ÀàĞÍ£ºÓÉ Content-Type Ö¸¶¨
-    - ÆäËûÏà¹ØHeader
+## Webå¼€å‘
+### HTTPç®€ä»‹
+####è¯·æ±‚æµç¨‹
+1. æµè§ˆå™¨å‘æœåŠ¡å™¨å‘é€HTTPè¯·æ±‚ï¼Œè¯·æ±‚åŒ…æ‹¬ï¼š
+    - æ–¹æ³•ï¼šGETä»…è¯·æ±‚èµ„æºï¼ŒPOSTé™„å¸¦ç”¨æˆ·æ•°æ®
+    - è·¯å¾„ï¼š/full/url/path
+    - åŸŸåï¼šç”±Hostå¤´æŒ‡å®šï¼šHost: www.sina.com.cn
+    - å…¶ä»–ç›¸å…³Header
+    - POSTæ–¹æ³•åŒ…å«ä¸€ä¸ªBodyï¼ŒåŒ…å«ç”¨æˆ·æ•°æ®
+2. æœåŠ¡å™¨å“åº”è¯·æ±‚ï¼Œè¯·æ±‚åŒ…æ‹¬
+    - å“åº”ä»£ç ï¼š200 è¡¨ç¤ºæˆåŠŸï¼Œ3xxè¡¨ç¤ºé‡å®šå‘ï¼Œ4xxè¡¨ç¤ºå®¢æˆ·ç«¯å‘é€è¯·æ±‚æœ‰é”™è¯¯ï¼Œ5xxè¡¨ç¤ºæœåŠ¡å™¨ç«¯å¤„ç†æ—¶å‘ç”Ÿäº†é”™è¯¯
+    - å“åº”ç±»å‹ï¼šç”± Content-Type æŒ‡å®š
+    - å…¶ä»–ç›¸å…³Header
     - Body
-3. ä¯ÀÀÆ÷¼ÌĞøÇëÇóÆäËû×ÊÔ´£¬±ÈÈçÍ¼Æ¬£¬ÔÙ´Î·¢³öHTTPÇëÇó£¬ÖØ¸´ÉÏÁ½²½
+3. æµè§ˆå™¨ç»§ç»­è¯·æ±‚å…¶ä»–èµ„æºï¼Œæ¯”å¦‚å›¾ç‰‡ï¼Œå†æ¬¡å‘å‡ºHTTPè¯·æ±‚ï¼Œé‡å¤ä¸Šä¸¤æ­¥
 
-####HTTP¸ñÊ½
-1. GET¸ñÊ½£¬ÀûÓÃ \r\n »»ĞĞ
+####HTTPæ ¼å¼
+1. GETæ ¼å¼ï¼Œåˆ©ç”¨ \r\n æ¢è¡Œ
         GET /path HTTP/1.1
         Header1: Value1
-2. POST¸ñÊ½£¬ÀûÓÃÁ½¸ö\r\n ·Ö¸îHeaderÓëBody
+2. POSTæ ¼å¼ï¼Œåˆ©ç”¨ä¸¤ä¸ª\r\n åˆ†å‰²Headerä¸Body
         POST /path HTTP/1.1
         Header1: Value1
 
         body data goes here
-3. ÏìÓ¦¸ñÊ½
+3. å“åº”æ ¼å¼
         200 OK
         Header1: Value1
 
         body goes here
 
-### HTML¼ò½é
+### HTMLç®€ä»‹
     <html>
     <head>
       <title>Hello</title>
@@ -1289,13 +1289,13 @@ python ¶à°æ±¾²¢´æ
     </body>
     </html>
 
-###WSGI½Ó¿Ú£¨Web Server Gateway Interface)
-####½Ó¿Ú¶¨Òå
+###WSGIæ¥å£ï¼ˆWeb Server Gateway Interface)
+####æ¥å£å®šä¹‰
     def application(environ, start_response):
         start_response('200 OK', [{'Content-Type', 'text/html'}])
         return [b'<h1>Hello, web!</h1>']
 
-ÆäÖĞ environ Îª°üº¬HTTPÇëÇóĞÅÏ¢µÄdict¶ÔÏó£¬start_responseÎªÒ»¸ö·¢ËÍHTTPÏìÓ¦µÄº¯Êı
+å…¶ä¸­ environ ä¸ºåŒ…å«HTTPè¯·æ±‚ä¿¡æ¯çš„dictå¯¹è±¡ï¼Œstart_responseä¸ºä¸€ä¸ªå‘é€HTTPå“åº”çš„å‡½æ•°
 
 server.py
     
@@ -1307,28 +1307,28 @@ server.py
     
     httpd.server_forever()
 
-###Ê¹ÓÃWeb¿ò¼Ü
+###ä½¿ç”¨Webæ¡†æ¶
     $ pip install flask
 
-### Ê¹ÓÃÄ£°å       
+### ä½¿ç”¨æ¨¡æ¿       
 
 
-##Òì²½IO
-Òì²½IOÄ£ĞÍĞèÒªÒ»¸öÏûÏ¢Ñ­»·£¬ÔÚÏûÏ¢Ñ­»·ÖĞ£¬Ö÷Ïß³Ì²»¶ÏÖØ¸´¡°¶ÁÈ¡ÏûÏ¢-´¦ÀíÏûÏ¢¡±ÕâÒ»¹ı³Ì£º
+##å¼‚æ­¥IO
+å¼‚æ­¥IOæ¨¡å‹éœ€è¦ä¸€ä¸ªæ¶ˆæ¯å¾ªç¯ï¼Œåœ¨æ¶ˆæ¯å¾ªç¯ä¸­ï¼Œä¸»çº¿ç¨‹ä¸æ–­é‡å¤â€œè¯»å–æ¶ˆæ¯-å¤„ç†æ¶ˆæ¯â€è¿™ä¸€è¿‡ç¨‹ï¼š
 
     loop = get_event_loop()
     while True:
         evernt = loop.get_enent()
         process_event(event)
 
-###Ğ­³Ì Coroutine
-×Ó³ÌĞòÊÇÍ¨¹ıÕ»ÊµÏÖµÄ
-Ğ­³Ì¿´ÉÏÈ¥ÊÇ×Ó³ÌĞò£¬µ«Ö´ĞĞ¹ı³ÌÖĞ£¬ÔÚ×Ó³ÌĞòÄÚ²¿¿ÉÖĞ¶Ï£¬È»ºó×ª¶øÖ´ĞĞ±ğµÄ×Ó³ÌĞò£¬ÔÚÊÊµ±µÄÊ±ºòÔÙ·´»ÚÀ²½Ó×ÅÖ´ĞĞ
-####Ğ­³ÌµÄÌØµãÊÇÔÚÒ»¸öÏß³ÌÖ´ĞĞ£¬ÓÅµãÓĞ
-- ²»ĞèÒªÇĞ»»Ïß³Ì£¬Ö´ĞĞĞ§ÂÊ¸ß
-- ²»ĞèÒª¶àÏß³ÌµÄËø»úÖÆ
+###åç¨‹ Coroutine
+å­ç¨‹åºæ˜¯é€šè¿‡æ ˆå®ç°çš„
+åç¨‹çœ‹ä¸Šå»æ˜¯å­ç¨‹åºï¼Œä½†æ‰§è¡Œè¿‡ç¨‹ä¸­ï¼Œåœ¨å­ç¨‹åºå†…éƒ¨å¯ä¸­æ–­ï¼Œç„¶åè½¬è€Œæ‰§è¡Œåˆ«çš„å­ç¨‹åºï¼Œåœ¨é€‚å½“çš„æ—¶å€™å†åæ‚”å•¦æ¥ç€æ‰§è¡Œ
+####åç¨‹çš„ç‰¹ç‚¹æ˜¯åœ¨ä¸€ä¸ªçº¿ç¨‹æ‰§è¡Œï¼Œä¼˜ç‚¹æœ‰
+- ä¸éœ€è¦åˆ‡æ¢çº¿ç¨‹ï¼Œæ‰§è¡Œæ•ˆç‡é«˜
+- ä¸éœ€è¦å¤šçº¿ç¨‹çš„é”æœºåˆ¶
 
-####Ğ­³ÌµÄÊµÏÖ£¬Í¨¹ı generator ÊµÏÖ£¬ÔÚ generator ÖĞ£¬ÎÒÃÇ¿ÉÒÔ²»¶Ïµ÷ÓÃnext()»ñÈ¡ÓÉyieldÓï¾ä·µ»ØµÄÏÂÒ»¸öÖµ£¬»¹¿ÉÒÔ½ÓÊÕµ÷ÓÃÕßµÄ²ÎÊı 
+####åç¨‹çš„å®ç°ï¼Œé€šè¿‡ generator å®ç°ï¼Œåœ¨ generator ä¸­ï¼Œæˆ‘ä»¬å¯ä»¥ä¸æ–­è°ƒç”¨next()è·å–ç”±yieldè¯­å¥è¿”å›çš„ä¸‹ä¸€ä¸ªå€¼ï¼Œè¿˜å¯ä»¥æ¥æ”¶è°ƒç”¨è€…çš„å‚æ•° 
 
     def consumer():
         r = ''
