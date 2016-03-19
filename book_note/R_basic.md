@@ -66,7 +66,7 @@
     - `data.matrix()` converted to matrix
 
 ### Names        
-        names(x) = ("a,", "b", "c")
+        names(x) = ("a,", "b", "c") 
         x <- list(a=1, b=2, c=3)
         x$a
         dimnames(m) <- list(c("a", "b"), c("c", "d"))
@@ -385,10 +385,10 @@ q for quantile function
 
 ##RMarkdown
 - `install.packages("rmarkdown")`
-- Rstudio ²Ëµ¥ÐÂ½¨RMarkdownÎÄµµ
-- ÊéÐ´ÄÚÈÝ
-- °´Å¥ `Knit HTML`£¬²¢Ñ¡Ôñ `View in Pane`
-- Ô¤ÀÀ
+- Rstudio èœå•æ–°å»ºRMarkdownæ–‡æ¡£
+- ä¹¦å†™å†…å®¹
+- æŒ‰é’® `Knit HTML`ï¼Œå¹¶é€‰æ‹© `View in Pane`
+- é¢„è§ˆ
    
     \```{r}
     summary(cars)
